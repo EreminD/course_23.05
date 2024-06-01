@@ -1,6 +1,6 @@
-package ru.inno;
+package ru.inno.lesson2;
 
-public class Main {
+public class Numbers {
     public static void main(String[] args) {
         //ключевое слово – объявляем переменную
         //  имя переменной
