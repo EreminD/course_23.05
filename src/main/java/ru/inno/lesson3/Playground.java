@@ -33,5 +33,13 @@ public class Playground {
 
 
 
+        int x = 5;
+        String a = "test";
+
+        Smartphone cellphone = new Smartphone();
+        cellphone.color ="red";
+        cellphone.brand="samsung";
+
+
     }
 }
