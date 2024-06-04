@@ -15,5 +15,10 @@ public class GarageDemo {
         garage[0] = mySuperCar;
         garage[1] = new Car("P543AB", "White");
         garage[2] = new Car("X453TY", "Black");
+
+
+        Car milanaCar = new Car("", "");
+        Car milanaCar2 = new Car("", "");
+        Car milanaCar3 = new Car("", "");
     }
 }
