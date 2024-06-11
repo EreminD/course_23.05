@@ -7,6 +7,7 @@ public class User {
     String email;
     double rating;
     boolean isOnline;
+    String password;
 
     public User(String myName, int myAge, boolean status, String myPhone, String myEmail) {
         age = myAge;
