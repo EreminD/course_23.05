@@ -3,6 +3,11 @@ package ru.inno.lesson2;
 public class Strings {
 
     public static void main(String[] args) {
+        String data = "a1_b2_c3_d4_e5#_f6";
+
+        String[] elements = data.split("#_");
+
+
         String name = "Дима любит";
         String empty = "";
         String blank = " ";
@@ -21,6 +26,8 @@ public class Strings {
 
         System.out.println(name.toUpperCase());
         System.out.println(name.equals(""));
+
+
 
     }
 }
