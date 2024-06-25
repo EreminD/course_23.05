@@ -1,17 +1,14 @@
 package ru.inno.lesson9;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
 import java.util.Objects;
 
 @XmlRootElement
 public class Book {
-    @JsonProperty("title")
+
     private String title;
-    @JsonProperty("year")
     private int year;
-    @JsonProperty("names")
     private String author;
 
     public Book() {
