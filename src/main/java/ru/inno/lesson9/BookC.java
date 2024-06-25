@@ -5,16 +5,15 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 import java.util.Objects;
 
 @XmlRootElement
-public class Book {
-
+public class BookC {
     private String title;
     private int year;
     private String author;
 
-    public Book() {
+    public BookC() {
     }
 
-    public Book(String title, int year, String author) {
+    public BookC(String title, int year, String author) {
         this.title = title;
         this.year = year;
         this.author = author;
@@ -22,6 +21,10 @@ public class Book {
 
     public String getTitle() {
         return title;
+    }
+
+    public String getFullInfo(){
+        return String.format("%s: %s (%d)", this.author, this.title, this.year);
     }
 
     public void setTitle(String title) {
@@ -47,7 +50,7 @@ public class Book {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Book book)) return false;
+        if (!(o instanceof BookC book)) return false;
         return getYear() == book.getYear() && Objects.equals(getTitle(), book.getTitle()) && Objects.equals(getAuthor(), book.getAuthor());
     }
 

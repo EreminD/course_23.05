@@ -13,9 +13,9 @@ public class BookJson {
         Path filePath = Path.of("book.json");
         Path listFilePath = Path.of("books.json");
 
-        Book book1 = new Book("12 стульев", 1927, "И.Ильф, Е.Петров");
-        Book book2 = new Book("13 стульев", 1927, "И.Ильф, Е.Петров");
-        Book book3 = new Book("14 стульев", 1927, "И.Ильф, Е.Петров");
+        BookC book1 = new BookC("12 стульев", 1927, "И.Ильф, Е.Петров");
+        BookC book2 = new BookC("13 стульев", 1927, "И.Ильф, Е.Петров");
+        BookC book3 = new BookC("14 стульев", 1927, "И.Ильф, Е.Петров");
 
         // помогатор
         ObjectMapper mapper = new ObjectMapper();
@@ -27,7 +27,7 @@ public class BookJson {
         // Deserialize
         // Book b = mapper.readValue(filePath.toFile(), Book.class);
 
-        List<Book> books = List.of(book1, book2, book3);
+        List<BookC> books = List.of(book1, book2, book3);
         // mapper.writeValue(listFilePath.toFile(), books);
         // List<Book> myBooks = mapper.readValue(listFilePath.toFile(), new TypeReference<>(){});
 

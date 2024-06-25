@@ -10,12 +10,12 @@ import java.util.Objects;
 public class Books {
     @XmlElementWrapper(name = "books")
     @XmlElement(name = "book")
-    private List<Book> bookList;
+    private List<BookC> bookList;
 
     public Books() {
     }
 
-    public Books(List<Book> books) {
+    public Books(List<BookC> books) {
         this.bookList = books;
     }
 
